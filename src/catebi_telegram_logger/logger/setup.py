@@ -1,6 +1,6 @@
 import logging
 
-from data.logger import LoggerCreateData
+from catebi_telegram_logger.data.logger import LoggerCreateData
 from catebi_telegram_logger.logger.telegram_handler import TelegramChatHandler
 
 
