@@ -3,7 +3,7 @@ import logging
 
 import sys
 
-from data.logger import LoggerCreateData
+from catebi_telegram_logger.data.logger import LoggerCreateData
 
 
 class TelegramChatHandler(logging.StreamHandler):

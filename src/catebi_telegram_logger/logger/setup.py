@@ -1,7 +1,7 @@
 import logging
 
 from data.logger import LoggerCreateData
-from logger.telegram_handler import TelegramChatHandler
+from catebi_telegram_logger.logger.telegram_handler import TelegramChatHandler
 
 
 def setup_logging(logger_create_data: LoggerCreateData):
