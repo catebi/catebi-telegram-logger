@@ -1,5 +1,5 @@
 # Catebi Telegram Logger
-Library to set up logging into our private chats.
+Library to set up logging into our private TG chats. Logging setup applies on the global level logger - on the root.
 
 ## Requirements
 
@@ -45,6 +45,8 @@ where
 ```python
 setup_logging(logger_create_data)
 ```
+
+Make sure no local loggers have '[propagate](https://docs.python.org/3/library/logging.html#logging.Logger.propagate)' field set to `False`.
 
 ## Structure
 
