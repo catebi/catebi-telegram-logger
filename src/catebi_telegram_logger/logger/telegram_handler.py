@@ -31,7 +31,7 @@ class TelegramChatHandler(logging.StreamHandler):
             if record.levelno < self.min_level:
                 return
 
-            msg = self.app_name + '| ' + self.format(record)
+            msg = self.format(record)
 
             if record.levelno >= logging.ERROR and self.ping_developers:
                 msg = self.ping_developers + ' ' + msg
