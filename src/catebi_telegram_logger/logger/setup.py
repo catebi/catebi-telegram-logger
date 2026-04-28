@@ -19,3 +19,6 @@ def setup_logging(logger_create_data: LoggerCreateData):
     tg_chat_handler = TelegramChatHandler(logger_create_data)
     tg_chat_handler.setFormatter(logging_format)
     root.addHandler(tg_chat_handler)
+
+    logging.getLogger("httpx").setLevel(logging.ERROR)
+    logging.getLogger("httpcore").setLevel(logging.ERROR)
